@@ -27,7 +27,7 @@
 			"@install:plugin-wpml-media",
 			"@install:plugin-wpml-string",
 			"@install:plugin-wpml-searchwp",
-			"install:plugin-wpml-allimport",
+			"@install:plugin-wpml-allimport",
 			"@copy:robots"
 		]
 	}
