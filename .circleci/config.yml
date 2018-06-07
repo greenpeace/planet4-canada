@@ -9,6 +9,7 @@ jobs:
   build-develop:
     <<: *defaults
     environment:
+      APP_ENVIRONMENT: development
       APP_HOSTNAME: k8s.p4.greenpeace.org
       APP_HOSTPATH: canada
       CLOUDSQL_INSTANCE: p4-develop-k8s
@@ -60,6 +61,7 @@ jobs:
   deploy-develop:
     <<: *defaults
     environment:
+      APP_ENVIRONMENT: development
       APP_HOSTNAME: k8s.p4.greenpeace.org
       APP_HOSTPATH: canada
       CLOUDSQL_INSTANCE: p4-develop-k8s
@@ -88,6 +90,7 @@ jobs:
   build-release:
     <<: *defaults
     environment:
+      APP_ENVIRONMENT: staging
       APP_HOSTNAME: release.k8s.p4.greenpeace.org
       APP_HOSTPATH: canada
       CLOUDSQL_INSTANCE: planet4-prod
@@ -141,6 +144,7 @@ jobs:
   deploy-release:
     <<: *defaults
     environment:
+      APP_ENVIRONMENT: staging
       APP_HOSTNAME: release.k8s.p4.greenpeace.org
       APP_HOSTPATH: canada
       CLOUDSQL_INSTANCE: planet4-prod
