@@ -154,7 +154,7 @@ jobs:
       GOOGLE_PROJECT_ID: planet4-production
       HELM_NAMESPACE: canada
       HELM_RELEASE: planet4-canada-release
-      WP_DB_NAME: canada_wordpress_master
+      WP_DB_NAME: canada_wordpress_release
       WP_STATELESS_BUCKET: planet4-canada-stateless-release
       WP_TITLE: Greenpeace Canada Release Candidate
     steps:
@@ -253,7 +253,7 @@ jobs:
       - run:
           name: Deploy new containers
           environment:
-            NEWRELIC_APPNAME: P4 Canada
+            NEWRELIC_APPNAME: P4 Canada Production
           command: |
             make deploy
 
