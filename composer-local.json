@@ -1,14 +1,34 @@
 {
 	"name": "planet4-canada/planet4-canada",
-	"version": "0.0.1",
+	"version": "0.0.2",
 
 	"require": {
-		"greenpeace/planet4-child-theme" : "dev-develop",
-		"greenpeace/planet4-master-theme" : "dev-develop",
-		"greenpeace/planet4-plugin-blocks" : "dev-develop"
+		"greenpeace/planet4-child-theme-canada" : "0.*",
+		"greenpeace/planet4-plugin-migrated-urls": "0.0.1"
 	},
 
 	"scripts": {
-		"site:custom" : []
+		"core:language": "wp language core install fr_CA",
+
+		"install:plugin-wpimport": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wp-all-import-pro_4.5.1.zip",
+		"install:plugin-wpml": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/sitepress-multilingual-cms-3.9.3.zip",
+		"install:plugin-wpml-management": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wpml-translation-management-2.5.2.zip",
+		"install:plugin-wpml-media": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wpml-media-translation-2.2.3.zip",
+		"install:plugin-wpml-string": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wpml-string-translation-2.7.3.zip",
+		"install:plugin-wpml-searchwp": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/searchwp-wpml-1.4.0.zip",
+		"install:plugin-wpml-allimport": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wpml-all-import.2.0.5.zip",
+		"install:searchwp": "wp plugin install https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/searchwp-2.9.13.zip --activate",
+
+		"site:custom": [
+			"@core:language",
+			"@install:plugin-wpimport",
+			"@install:plugin-wpml",
+			"@install:plugin-wpml-management",
+			"@install:plugin-wpml-string",
+			"@install:plugin-wpml-searchwp",
+			"@install:plugin-wpml-allimport",
+			"@install:searchwp"
+		]
 	}
+
 }
