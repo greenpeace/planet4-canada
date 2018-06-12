@@ -253,7 +253,7 @@ jobs:
       - run:
           name: Deploy new containers
           environment:
-            NEWRELIC_APPNAME: P4 Canada
+            NEWRELIC_APPNAME: P4 Canada Production
           command: |
             make deploy
 
