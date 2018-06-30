@@ -230,6 +230,7 @@ jobs:
       CONTAINER_PREFIX: planet4-canada
       GCLOUD_CLUSTER: planet4-production
       GOOGLE_PROJECT_ID: planet4-production
+      MIN_REPLICA_COUNT: 2
       HELM_NAMESPACE: canada
       HELM_RELEASE: planet4-canada-master
       WP_DB_NAME: canada_wordpress_master
