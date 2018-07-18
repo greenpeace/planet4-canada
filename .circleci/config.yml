@@ -33,12 +33,12 @@ jobs:
       - run:
           name: Build
           working_directory: /home/circleci
-          command: |
-            if ! make
-            then
-              ${HOME}/scripts/notify-job-failure.sh
-              exit 1
-            fi
+          command: make
+
+      - run:
+          name: Notify failure
+          when: on_fail
+          command: notify-job-failure.sh
 
       - persist_to_workspace:
           root: /tmp/workspace
@@ -86,6 +86,11 @@ jobs:
             export BUILD_TAG=build-$(cat /tmp/workspace/var/circle-build-num)
             make deploy
 
+      - run:
+          name: Notify failure
+          when: on_fail
+          command: notify-job-failure.sh
+          
   build-release:
     <<: *defaults
     environment:
@@ -115,12 +120,12 @@ jobs:
       - run:
           name: Build
           working_directory: /home/circleci
-          command: |
-            if ! make
-            then
-              ${HOME}/scripts/notify-job-failure.sh
-              exit 1
-            fi
+          command: make
+
+      - run:
+          name: Notify failure
+          when: on_fail
+          command: notify-job-failure.sh
 
       - persist_to_workspace:
           root: /tmp/workspace
@@ -170,6 +175,11 @@ jobs:
             export BUILD_TAG=build-$(cat /tmp/workspace/var/circle-build-num)
             make deploy
 
+      - run:
+          name: Notify failure
+          when: on_fail
+          command: notify-job-failure.sh
+
   build-tag:
     <<: *defaults
     environment:
@@ -198,12 +208,12 @@ jobs:
       - run:
           name: Build
           working_directory: /home/circleci
-          command: |
-            if ! make
-            then
-              ${HOME}/scripts/notify-job-failure.sh
-              exit 1
-            fi
+          command: make
+
+      - run:
+          name: Notify failure
+          when: on_fail
+          command: notify-job-failure.sh
 
       - persist_to_workspace:
           root: /tmp/workspace
