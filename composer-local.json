@@ -1,6 +1,5 @@
 {
   "name": "planet4-canada/planet4-canada",
-  "version": "1.26.0",
   "require": {
 	  "greenpeace/planet4-child-theme-canada" : "0.1.1"
   },
