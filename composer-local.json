@@ -1,5 +1,7 @@
 {
   "name": "planet4-canada/planet4-canada",
+  "description": "Planet4 GP Mena website configuration",
+  "license": "MIT",
   "require": {
 	  "greenpeace/planet4-child-theme-canada" : "0.1.1"
   },
