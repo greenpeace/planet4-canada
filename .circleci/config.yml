@@ -20,7 +20,7 @@ job_environments:
     NEWRELIC_APPNAME: P4 Canada Development
     WP_DB_NAME: canada_wordpress_develop
     WP_STATELESS_BUCKET: planet4-canada-stateless-develop
-    WP_VERSION: 5.0.1
+    WP_VERSION: 5.0.2
   release_environment: &release_environment
     APP_ENVIRONMENT: staging
     APP_HOSTNAME: release.k8s.p4.greenpeace.org
