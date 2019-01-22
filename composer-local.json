@@ -5,7 +5,7 @@
   "require": {
 	  "greenpeace/planet4-child-theme-canada" : "0.*",
 	  "wpackagist-theme/twentyseventeen":"2.0",
-	  "greenpeace/planet4-master-theme" : "dev-release/v1.30.0",
+	  "greenpeace/planet4-master-theme" : "dev-bug/planet-2767-author-profile-block",
 	  "greenpeace/planet4-plugin-blocks" : "dev-release/v1.30.0"
   },
   "scripts": {
