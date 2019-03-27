@@ -42,6 +42,7 @@ job_environments:
     NEWRELIC_APPNAME: P4 Canada Production
     WP_DB_NAME: canada_wordpress_master
     WP_STATELESS_BUCKET: planet4-canada-stateless
+
 job_definitions:
   build_steps: &build_steps
     working_directory: ~/
@@ -79,18 +80,11 @@ job_definitions:
     working_directory: /tmp/workspace/src
     steps:
       - checkout
-      - attach_workspace:
-          at: /tmp/workspace
       - run: release-prepare-nro.sh
       - run:
           name: Notify failure
           when: on_fail
           command: TYPE="Prepare" notify-job-failure.sh
-      - persist_to_workspace:
-          root: /tmp/workspace
-          paths:
-            - var
-            - src
 
   notify_promote: &notify_promote
     working_directory: ~/project
