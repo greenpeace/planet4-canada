@@ -3,38 +3,38 @@
     {
       "label": "Planet4 Canada EN act page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/en/act/",
-      "delay": 2000,
-      "misMatchThreshold": 0.5
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     },
     {
       "label": "Planet4 Canada EN explore page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/en/explore/",
-      "delay": 2000,
-      "misMatchThreshold": 0.5
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     },
     {
       "label": "Planet4 Canada EN privacy and cookies page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/en/privacy-policy/",
-      "delay": 2000,
-      "misMatchThreshold": 0.5
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     },
     {
       "label": "Planet4 Canada FR act page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/fr/agir/",
-      "delay": 2000,
-      "misMatchThreshold": 0.5
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     },
     {
       "label": "Planet4 Canada FR explore page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/fr/explorer/",
-      "delay": 2000,
-      "misMatchThreshold": 0.5
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     },
     {
       "label": "Planet4 Canada FR privacy and cookies page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/fr/politique-de-notre-communaute/",
-      "delay": 2000,
-      "misMatchThreshold": 0.5
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     }
   ]
 }
