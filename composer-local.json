@@ -3,18 +3,12 @@
   "description": "Planet4 GP Mena website configuration",
   "license": "MIT",
   "require": {
-	  "greenpeace/planet4-child-theme-canada" : "v0.*"
+    "greenpeace/planet4-child-theme-canada" : "v0.*",
+    "plugins/wpml-multilingual-cms": "*",
+    "plugins/wpml-translation-management": "*",
+    "plugins/wpml-string-translation": "*"
   },
   "scripts": {
-    "core:language": "wp language core install fr_CA",
-    "install:plugin-wpml": "wp plugin install --activate https://storage.googleapis.com/planet4-3rdparty-plugins/sitepress-multilingual-cms.4.3.12.zip",
-    "install:plugin-wpml-management": "wp plugin install --activate https://storage.googleapis.com/planet4-3rdparty-plugins/wpml-translation-management.2.9.6.zip",
-    "install:plugin-wpml-stringtranslate": "wp plugin install --activate https://storage.googleapis.com/planet4-3rdparty-plugins/wpml-string-translation.3.0.9.zip",
-    "site:custom": [
-      "@core:language",
-      "@install:plugin-wpml",
-      "@install:plugin-wpml-management",
-      "@install:plugin-wpml-stringtranslate"
-    ]
+    "core:language": "wp language core install fr_CA"
   }
 }
