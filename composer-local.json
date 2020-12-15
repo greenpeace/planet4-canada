@@ -9,6 +9,9 @@
     "plugins/wpml-string-translation": "*"
   },
   "scripts": {
-    "core:language": "wp language core install fr_CA"
+    "core:language": "wp language core install fr_CA",
+    "site:custom": [
+      "@core:language"
+    ]      
   }
 }
