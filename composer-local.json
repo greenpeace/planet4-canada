@@ -4,7 +4,7 @@
   "license": "MIT",
   "require": {
     "greenpeace/planet4-child-theme-canada" : "dev-master",
-    "plugins/wpml-multilingual-cms": "*",
+    "plugins/sitepress-multilingual-cms": "*",
     "plugins/wpml-translation-management": "*",
     "plugins/wpml-string-translation": "*"
   },
