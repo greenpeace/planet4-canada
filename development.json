@@ -1,5 +1,5 @@
 {
   "require": {
-    "planet4-gpca-plugin-blocks": "dev-master"
+    "shawninder/planet4-gpca-plugin-blocks": "dev-master"
   }
 }
