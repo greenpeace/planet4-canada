@@ -7,7 +7,8 @@
         "greenpeace/planet4-gpca-plugin-blocks": "dev-master",
         "plugins/sitepress-multilingual-cms": "*",
         "plugins/wpml-translation-management": "*",
-        "plugins/wpml-string-translation": "*"
+        "plugins/wpml-string-translation": "*",
+        "plugins/wpml-media-translation": "*"
     },
     "scripts": {
         "core:language": "wp language core install fr_CA",
