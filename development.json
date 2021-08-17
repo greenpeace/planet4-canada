@@ -1,5 +1,7 @@
 {
   "require":{
-    "greenpeace/planet4-child-theme-canada" : "dev-dev"
+    "greenpeace/planet4-child-theme-canada" : "dev-dev",
+    "the-open/campaigns": "dev-master",
+		"wpackagist-plugin/leadin": "8.*"
   }
 }
