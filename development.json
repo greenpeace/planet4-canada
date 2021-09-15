@@ -1,5 +1,6 @@
 {
   "require":{
+    "greenpeace/planet4-gpca-plugin-blocks": "dev-prevent-1mb-script-on-each-page",
     "greenpeace/planet4-child-theme-canada" : "dev-dev",
     "the-open/campaigns": "dev-master"
   }
