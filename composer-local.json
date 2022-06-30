@@ -6,7 +6,6 @@
         "greenpeace/planet4-child-theme-canada" : "dev-main",
         "greenpeace/planet4-gpca-plugin-blocks": "dev-master",
         "plugins/sitepress-multilingual-cms": "*",
-        "plugins/wpml-translation-management": "*",
         "plugins/wpml-string-translation": "*"
     },
     "scripts": {
