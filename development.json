@@ -1,5 +1,6 @@
 {
-  "require":{
-    "the-open/campaigns": "dev-master"
+  "require": {
+    "the-open/campaigns": "dev-master",
+    "greenpeace/planet4-gpca-tweet-generator": "dev-master"
   }
 }
