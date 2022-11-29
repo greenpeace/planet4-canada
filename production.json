@@ -1,6 +1,7 @@
 {
-    "require": {
-      "greenpeace/planet4-child-theme-canada" : "v0.*",
-      "greenpeace/planet4-gpca-plugin-blocks": "v0.*"
-    }
+  "require": {
+    "greenpeace/planet4-child-theme-canada": "v0.*",
+    "greenpeace/planet4-gpca-plugin-blocks": "v0.*",
+    "greenpeace/planet4-gpca-tweet-generator": "v0.*"
+  }
 }
