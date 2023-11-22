@@ -1,7 +1,8 @@
 {
   "require": {
     "the-open/campaigns": "dev-master",
-    "greenpeace/planet4-gpca-tweet-generator": "dev-main"
+    "greenpeace/planet4-gpca-tweet-generator": "dev-main",
+    "greenpeace/planet4-master-theme" : "dev-PLANET-7192-allow-ep-ajax-search"
   },
   "cacheBust": "12"
 }
