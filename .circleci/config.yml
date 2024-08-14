@@ -37,7 +37,6 @@ job_environments:
     HELM_RELEASE: planet4-canada
     WP_DB_NAME: canada_wordpress_develop
     WP_STATELESS_BUCKET: planet4-canada-stateless-develop
-    GIT_REF: PLANET-7573_upgrade-elasticpress-to-version-5.x
   release_build_env: &release_build_env
     GOOGLE_PROJECT_ID: planet4-production
   release_environment: &release_environment
