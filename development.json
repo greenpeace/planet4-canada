@@ -1,0 +1,5 @@
+{
+  "require": {
+    "greenpeace/planet4-master-theme": "dev-PLANET-8165_serve-hubspot-pages-under-p4-domain-and-path"
+  }
+}
